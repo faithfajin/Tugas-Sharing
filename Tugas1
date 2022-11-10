@@ -1,0 +1,32 @@
+# Faith Reyhan E. Waluyom #
+# 222410102082 #
+print(10*"*","Tebak-Tebakan Angka",10*"*")
+print(6*"*","Anda Memiliki 7 Kesempatan",6*"*")
+import random  
+angka = random.randint(0, 100)
+tebakan = angka
+kesempatantebakan = 1 
+while kesempatantebakan <= 8 :
+    print("Ini Adalah Kesempatan ke", kesempatantebakan)
+    Inputan = int(input("Masukan Angka Anda : "))
+    if Inputan<tebakan :
+        print("Tidak Tepat, Angka Terlalu Kecil")
+        kesempatantebakan += 1
+        print(41*"*")
+    if Inputan>tebakan :
+        print("Tidak Tepat, Angka Terlalu Besar")
+        kesempatantebakan += 1
+        print(41*"*")    
+    elif Inputan == tebakan:
+        print("Tebakkan Anda Tepat, Anda menebak sebanyak",kesempatantebakan,"kali")
+        print(41*"*")
+        break
+    elif kesempatantebakan >= 8:
+        print("Kesempatan Anda Telah Habis")
+        print("Tetap Semangat terkadang Usaha Kedua Jauh Lebih Indah")
+        print(41*"*")
+        break    
+            
+    
+        
+    
